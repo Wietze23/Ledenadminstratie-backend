@@ -23,6 +23,10 @@ public class LidController {
         return lidRepository.findAllByOrderByNaamAsc();
     }
 
+//    @GetMapping("/lid/{id}")
+//    Iterable<Lid> findByNaam() {
+//        return lidRepository.findByNaam();
+//    }
     @DeleteMapping("/lid/{id}")
     void delete(@PathVariable int id) {
         lidRepository.deleteById(id);

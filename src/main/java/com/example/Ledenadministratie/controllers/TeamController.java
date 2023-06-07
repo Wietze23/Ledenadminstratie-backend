@@ -24,6 +24,11 @@ public class TeamController {
         return teamRepository.findAllByOrderByCategorieAsc();
     }
 
+//    @GetMapping("/team")
+//    Iterable<Team> findByCategorie() {
+//        return teamRepository.findByCategorie();
+//    }
+
     @DeleteMapping("/team/{id}")
     void delete(@PathVariable int id) {
         teamRepository.deleteById(id);

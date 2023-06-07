@@ -5,6 +5,8 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface LidRepository extends CrudRepository<Lid, Integer> {
     Iterable<Lid> findAllByOrderByNaamAsc();
+
+//    Iterable<Lid> findByNaam();
 }
 
 
